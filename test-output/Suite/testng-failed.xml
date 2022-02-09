@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="com.FirstTest(failed)">
+    <parameter name="browser" value="internetexplorer"/>
+    <classes>
+      <class name="example.FirstTest">
+        <methods>
+          <include name="GOOGLE"/>
+          <include name="terminate"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- example.FirstTest -->
+    </classes>
+  </test> <!-- com.FirstTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
