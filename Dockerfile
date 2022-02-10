@@ -1,4 +1,6 @@
 FROM centos:7
+RUN rm -rf /etc/yum.repo.d/*
+COPY centos.repo /etc/yum.repo.d/centos.repo
 RUN yum install wget dnf -y
 RUN dnf install 'dnf-command(config-manager)' -y
 RUN rpm --import https://packages.microsoft.com/keys/microsoft.asc
