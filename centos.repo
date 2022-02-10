@@ -1,0 +1,11 @@
+[centos7-extras]
+name=centos7 extras packages
+baseurl=http://mirror.centos.org/centos/7/extras/x86_64/
+enabled=1
+gpgcheck=0
+
+[centos7-os]
+name=centos7 OS packages
+baseurl=http://mirror.centos.org/centos/7/os/x86_64/
+enabled=1
+gpgcheck=0
